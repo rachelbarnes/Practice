@@ -19,6 +19,12 @@ OneAway
 	This assumes that every char, both lowercase and uppercase are unique values
 
 StringCompression
+	Honestly, in itself, I like this one. 
+	An important thing I found worth mentioning to my future self is noting the ASCII table when getting the key and value pair from my dictionary<char, int>. When I called my key, I got the ASCII number (a being 97), and  I added my int value to the ASCII number (for example, if 'a' occured 4 times in my string, it would have been 101 instead of "a4")
+		To properly create this string, you need to call the pair as 
+			compressed += pair.key.ToString() + pair.value.ToString(); 
+			converting the key and value to string allows proper concatentation	
+		I didn't see this issue until I wrote the method in VS; I didn't notice this on paper
 
 RotateMatrix
 

@@ -52,6 +52,7 @@
     <Compile Include="PalindromePermutationClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringCompressionClass.cs" />
     <Compile Include="StringPermutationClass.cs" />
     <Compile Include="URLifyClass.cs" />
   </ItemGroup>
