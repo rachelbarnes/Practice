@@ -26,7 +26,7 @@ namespace Practice
             {
                 if (i < CountWords - 1)
                     URL += splitPreURL[i] + "%20";
-                if (i == CountWords - 1)
+                if (i == CountWords - 1) //if the word is the last word in the array resulting from the string split, don't put the replaceSpace string at the end of the string
                     URL += splitPreURL[i]; 
             }
             return URL; 
@@ -42,6 +42,14 @@ namespace Practice
             var expected = "Ms%20Rachel%20Barnes";
             var actual = ify.URLify("Ms Rachel Barnes");
             Assert.AreEqual(expected, actual);
+        }
+        [Test]
+        public void URLOneWordTest()
+        {
+            var ify = new URLifyClass();
+            var expected = "Cats"; 
+            var actual = ify.URLify("Cats");
+            Assert.AreEqual(expected, actual); 
         }
     }
 
