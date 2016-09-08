@@ -9,8 +9,8 @@ URLify
 	Is there a more efficient way of implementing this method? 
 
 PalindromPermutation
-	I left this off in the middle of a brute force solution, one that is brute even for a brute force
-	Do a brute force solution in another way
+	I would like to find another way to do this that doesn't use 2 foreach loops, however I do like this solution - I find it easy to read
+		Also, in the second foreach loop, I used KeyValuePair<char, int> instead of var, I find it easier to read at a glance. I know it's not my normal formatting, but I'm not worried about changing the type of my pair variable. 
 	This assumes that every char, both lowercase and uppercase are unique values
 
 OneAway
