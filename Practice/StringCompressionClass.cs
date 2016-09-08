@@ -17,7 +17,6 @@ namespace Practice
 
          if the compressed string is longer than the uncompressed string, then returned the uncompressed string
          */
-
         public string Compress(string uncompressed)
         {
             var dict = new Dictionary<char, int>();
@@ -30,9 +29,8 @@ namespace Practice
                     dict.Add(ch, 1);
             }
             foreach (var pair in dict)
-            {
                 compressed += pair.Key.ToString() + pair.Value.ToString();
-            }
+
             if (compressed.Length > uncompressed.Length)
                 return uncompressed; 
             return compressed;
@@ -54,6 +52,14 @@ namespace Practice
             var compress = new StringCompressionClass();
             var expected = "r4b1k8";
             var actual = compress.Compress("rrrrbkkkkkkkk");
+            Assert.AreEqual(expected, actual); 
+        }
+        [Test]
+        public void CompressCaseSensitive()
+        {
+            var compress = new StringCompressionClass();
+            var expected = "G3r1h2I9b2";
+            var actual = compress.Compress("GGGrhhIIIIIIIIIbb");
             Assert.AreEqual(expected, actual); 
         }
         [Test]

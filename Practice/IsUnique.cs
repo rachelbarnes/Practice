@@ -15,19 +15,18 @@ namespace Practice
         I have 2 methods here: 
             1. use a dictionary to store keys for each new character and aggregating the number of times it is in the string by a counter as the value
             2. put all the chars in a list and determine if a char is a duplciate list element
-        */ 
+        */
 
         public bool IsUniqueDictionary(string AmIUnique)
         {
             var dict = new Dictionary<char, int>();
             foreach (var ch in AmIUnique)
-           { 
-                var count = 0;
+            {
                 if (dict.Keys.Contains(ch))
-                    dict[ch] = count++;
+                    dict[ch] = dict[ch] + 1;
                 if (!dict.Keys.Contains(ch))
-                    dict.Add(ch, count++);
-                if (count > 1)
+                    dict.Add(ch, 1);
+                if (dict[ch] > 1)
                     return false;
             }
             return true;
@@ -48,7 +47,7 @@ namespace Practice
         //tests 
         public class IsUniqueTests
         {
-            //testing the first method
+            //testing the IsUnique method that uses a Dictionary
             [Test]
             public void IsUnique1()
             {
@@ -65,7 +64,7 @@ namespace Practice
                 var actual = myClass.IsUniqueDictionary("Extravagant");
                 Assert.AreEqual(expected, actual);
             }
-            //testing the second method
+            //testing the IsUnique method that uses a List
             [Test]
             public void IsUnique3()
             {
