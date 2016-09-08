@@ -21,7 +21,7 @@ namespace Practice
         {
             var dict = new Dictionary<char, int>();
             foreach (var ch in AmIUnique)
-            {
+           { 
                 var count = 0;
                 if (dict.Keys.Contains(ch))
                     dict[ch] = count++;

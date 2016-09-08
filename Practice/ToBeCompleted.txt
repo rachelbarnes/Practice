@@ -1,0 +1,25 @@
+IsUnique
+	Is there a more efficient way of implementing this method?
+	This assumes that every char, both lowercase and uppercase are unique values
+
+CheckPermutation
+	I have it completed and done, however I know it can be better, so this is my note to go back and fix the time complexity. 
+
+URLify
+	Is there a more efficient way of implementing this method? 
+
+PalindromPermutation
+	I left this off in the middle of a brute force solution, one that is brute even for a brute force
+	Do a brute force solution in another way
+	This assumes that every char, both lowercase and uppercase are unique values
+
+OneAway
+	I do have 2 loops here... one to add all the chars to the list and the other to compare the lists... I'm assuming this would be more of a brute solution than not because of that
+	Would the efficiency be O(n) because the loops aren't operating in each other? 
+	This assumes that every char, both lowercase and uppercase are unique values
+
+StringCompression
+
+RotateMatrix
+
+ZeroMatrix

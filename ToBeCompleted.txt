@@ -1,0 +1,2 @@
+CheckPermutation
+	I have it completed and done, however I know it can be better, so this is my note to go back and fix the time complexity. 
