@@ -38,6 +38,7 @@ namespace Practice
             return true;
         }
 
+
         class PalindromePermutationTests
         {
             [Test]

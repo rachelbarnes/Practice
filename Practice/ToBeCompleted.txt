@@ -27,5 +27,6 @@ StringCompression
 		I didn't see this issue until I wrote the method in VS; I didn't notice this on paper
 
 RotateMatrix
+	This method needs much more work and more thought, as well as studying some more and practiciing more about 2 dimensional arrays
 
 ZeroMatrix
