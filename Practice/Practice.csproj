@@ -48,15 +48,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheckSubstringClass.cs" />
+    <Compile Include="DeleteMiddleNode.cs" />
     <Compile Include="IsUnique.cs" />
     <Compile Include="LinkedList.cs" />
+    <Compile Include="LinkedListPalindrome.cs" />
     <Compile Include="OneAwayClass.cs" />
     <Compile Include="PalindromePermutationClass.cs" />
+    <Compile Include="PartitionForLinkedLists.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RetrieveKToLastOfLinkedListClass.cs" />
+    <Compile Include="ReverseString.cs" />
     <Compile Include="RotateMatrixClass.cs" />
     <Compile Include="StringCompressionClass.cs" />
     <Compile Include="StringPermutationClass.cs" />
+    <Compile Include="SumLinkedList.cs" />
     <Compile Include="URLifyClass.cs" />
   </ItemGroup>
   <ItemGroup>
